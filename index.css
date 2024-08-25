@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-cont {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/travel-sm-bg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.heading {
+    font-size: 36px;
+    color: #ffffff;
+    width: 90%;
+    text-align: center;
+    max-width: 500px;
+}
+
+.para {
+    font-size: 20px;
+    color: #ffffff;
+    width: 90%;
+    text-align: center;
+    max-width: 500px;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    height: 50px;
+    border-width: 0;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 80%;
+    max-width: 400px;
+}
+
+.btn1 {
+    background-color: #ffffff;
+    color: #183b56;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffffff;
+}
+
+@media (min-width:768px) {
+    .bg-cont {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/travel-md-bg.png');
+    }
+
+    .card {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 500px;
+    }
+
+    .button {
+        width: 200px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+}
